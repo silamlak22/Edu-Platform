@@ -1,0 +1,108 @@
+ h1,h2,h3,h4,h5,h6{
+    font-family: "Lora", serif;
+ }
+
+ body{
+    font-family: "Lato", sans-serif;
+    line-height: 2;
+    font-size: 16px;
+ }
+
+ .text-light{
+   font-weight: 300;
+ }
+
+ .page-content{
+   margin-top: 96px ;
+ }
+
+ header{
+    top:0 ;
+ }
+
+.section-padding{
+   padding:128px 0;
+}
+
+.section-header h2{
+   margin-bottom:96px;
+}
+
+.edu-bold{
+   font-weight: bold;
+}
+
+.section-header h3{
+   margin-bottom: 60px;
+}
+
+ h1{
+    font-size:36px;
+ }
+
+ .section-header h3.border-left::after{
+   position: absolute;
+   content: '';
+   width: 60px;
+   height: 1px;
+   bottom: -30px;
+   left:0;
+   background-color: #fff;
+ }
+
+ .section-header h2.border-center::after{
+   position: absolute;
+   content: '';
+   width: 60px;
+   height: 1px;
+   background-color: #23d789;
+   bottom: -30px;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+ .primary{
+   color:#23d789;
+ }
+ 
+ .read-more:hover{
+   color: #f62459;
+ }
+
+.read-more{
+   font-weight: bold;
+   font-size: 14px;
+   text-decoration: none;
+   color: #23d789;
+ }
+ .cta{
+    padding: 10px 62px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+ }
+
+ .cta1{
+    background-color: #23d789;
+    border: 2px solid #23d789;
+    transition: all  0.5s ease;
+ }
+
+ .cta1:hover{
+    background: rgba(0,0,0,0);
+    border:2px solid #23d789;
+    color:#23d789;
+ }
+
+ .cta2{
+    background-color: #f62459;
+    border: 2px solid #f62459;
+    transition: all  0.5s ease;
+ }
+
+ .cta2:hover{
+    background: rgba(0,0,0,0);
+    border:2px solid #f62459;
+    color:#f62459;
+ }

@@ -1,0 +1,39 @@
+.doctoral {
+    background: url('../../public/images/doctoral/left-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    position: relative;
+    color:#fff;
+}
+
+.doctoral::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.doctoral-text,.doctoral-button,.border-left{
+    position: relative;
+    z-index: 3;
+}
+
+.doctoral-button{
+    color:#fff;
+    margin-top: 30px;
+}
+
+.doctoral-right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right:0;
+    top:0;
+    background: url('../../public/images/doctoral/right.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(150px 0, 100% 0, 100% 100% ,0 100%);
+}

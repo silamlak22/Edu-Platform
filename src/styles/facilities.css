@@ -1,0 +1,108 @@
+.facilities{
+    background: url("../../public/images/facilities/facilities-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    min-height: 600px;
+}
+.facilities .section-header h2{
+    margin-bottom: 60px;
+
+}
+
+.facility-readmore {
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.facilities-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-height: 900px;
+    gap: 6px;
+    margin-top: -150px;
+    margin-bottom: 20px;
+}
+
+.facilities-container .id1{
+    background: url('../../public/images/facilities/w-overlay/halls.jpg') no-repeat;
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-size: cover;
+}
+
+.facilities-container .id2{
+    background: url('../../public/images/facilities/w-overlay/books.jpg') no-repeat;
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-size: cover;
+}
+
+.facilities-container .id3{
+    background: url('../../public/images/facilities/w-overlay/labs.jpg') no-repeat;
+    grid-column-start: 3 ;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-size: cover;
+}
+
+.facilities-container .id4{
+    background: url('../../public/images/facilities/w-overlay/study-hall.jpg') no-repeat;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-size: cover;
+}
+
+.facilities-container .id5{
+    background: url('../../public/images/facilities/w-overlay/internet.jpg') no-repeat;
+    grid-column-start: 3 ;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-size: cover;
+}
+
+.facilities-container .id6{
+    background: url('../../public/images/facilities/w-overlay/dormitories.jpg') no-repeat;
+    grid-column-start: 4 ;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-size: cover;
+}
+
+.facility-item{
+    position: relative;
+    color:#fff;
+}
+
+.facility-item p{
+    z-index: 2;
+    position: relative;
+    padding-top: 22px;
+    padding-left: 20px;
+
+}
+
+.facility-item::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.id1 p , .id2 p{
+   font-size: 18px;
+}

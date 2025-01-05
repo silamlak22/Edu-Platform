@@ -1,0 +1,60 @@
+header {
+  height: 96px;
+  line-height: 96px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-brand,
+#navbarSupportedContent {
+  line-height: 96px;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+a.navbar-brand,
+a.nav-link {
+  padding: 0;
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active,
+a.nav-link:hover {
+  color: #23d789;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 30px;
+  font-size: 14px;
+  padding-right: 0;
+}
+
+/*** ICONS ***/
+
+.icons-holder {
+  color: #fff;
+}
+
+.social-icons,
+.social {
+  display: inline-block;
+}
+
+.separator {
+  margin: 0 24px;
+}
+
+.social {
+  width: 36px;
+  height: 36px;
+  background: #575757;
+  margin-left: 6px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}

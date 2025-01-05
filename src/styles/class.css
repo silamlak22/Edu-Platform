@@ -1,0 +1,39 @@
+.class-sub-header{
+    width: 60%;
+}
+
+.class-section h2{
+    margin-bottom: 60px;
+}
+
+.class-section button{
+    color: #fff;
+    margin-top: 34px;
+    margin-bottom: 75px;
+}
+
+.class-section-image-container{
+    width:70%;
+    min-height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.class-main-image{
+    width: 900px;
+    height: 547px;
+    padding: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../public/images/class/class-img.jpg');
+
+}
+
+.class-phone-img{
+    position: absolute;
+    top: -96px;
+    right: 0;
+    background-image:url('../../public/images/class/phone.png') ;
+    width: 223px;
+    height: 644px;
+}
