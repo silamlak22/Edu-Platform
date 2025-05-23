@@ -1,59 +1,57 @@
-select{
-    width: 300px;
-    height: 40px;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 20px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+select {
+  width: 300px;
+  height: 40px;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.edu-select{
-    position: relative;
-    width: 300px;
-    height: 40px;
-    margin-bottom: 40px;
-    border: transparent;
+.edu-select {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 40px;
+  border: transparent;
 }
 
-.edu-select:first-child{
-    margin-top: 30px;
+.edu-select:first-child {
+  margin-top: 30px;
 }
 
-
-.edu-select::before{
-    position: absolute;
-    content: '';
-    right: 12px;
-    top:45%;
-    transform: translateY(-50%)scale(0.8,0.6);
-    font-size: 13px;
-    z-index: -1;
-    border-bottom: 8px solid  #495057;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    width: 8px;
-    height: 8px;
+.edu-select::before {
+  position: absolute;
+  content: "";
+  right: 12px;
+  top: 45%;
+  transform: translateY(-50%) scale(0.8, 0.6);
+  font-size: 13px;
+  z-index: -1;
+  border-bottom: 8px solid #495057;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  width: 8px;
+  height: 8px;
 }
 
-.edu-select::after{
-    position: absolute;
-    content: '';
-    right: 12px;
-    top: 62%; 
-    transform: translateY(-50%) scale(0.8,0.6);
-    font-size: 13px;
-    z-index: -1;
-    border-top: 8px solid  #495057;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    width: 8px;
-    height: 8px;
+.edu-select::after {
+  position: absolute;
+  content: "";
+  right: 12px;
+  top: 62%;
+  transform: translateY(-50%) scale(0.8, 0.6);
+  font-size: 13px;
+  z-index: -1;
+  border-top: 8px solid #495057;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  width: 8px;
+  height: 8px;
 }
-
 
 /*
 .edu-select::before{
@@ -65,4 +63,3 @@ select{
     font-size: 13px;
     z-index: -1;
 } */
-

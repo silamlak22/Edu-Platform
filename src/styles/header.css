@@ -1,60 +1,112 @@
 header {
-  height: 96px;
-  line-height: 96px;
+  height: 80px;
+  /* line-height: 96px; */
   position: fixed;
   width: 100%;
   z-index: 100;
 }
 
-.navbar-brand,
-#navbarSupportedContent {
-  line-height: 96px;
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.navbar {
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 24px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-a.navbar-brand,
-a.nav-link {
+.nav-item {
   padding: 0;
+}
+
+a.nav-link {
   color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link.active,
 a.nav-link:hover {
-  color: #23d789;
+  /* background-color: ; */
+  color: #3b3486;
 }
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-left: 30px;
-  font-size: 14px;
-  padding-right: 0;
-}
-
-/*** ICONS ***/
 
 .icons-holder {
-  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.social-icons,
-.social {
-  display: inline-block;
-}
-
-.separator {
-  margin: 0 24px;
+.social-icons {
+  display: flex;
+  gap: 10px;
 }
 
 .social {
   width: 36px;
   height: 36px;
   background: #575757;
-  margin-left: 6px;
-  text-align: center;
-  line-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+  font-size: 16px;
+}
+
+.social:hover {
+  background: #3b3486;
+  color: #fff;
+}
+
+.separator {
+  margin: 0 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+    height: 72px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    background: #1e1e2f;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    padding: 20px;
+    display: none;
+  }
+
+  .navbar-nav.active {
+    display: flex;
+  }
+
+  .icons-holder {
+    display: none;
+  }
 }

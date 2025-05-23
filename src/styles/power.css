@@ -1,14 +1,13 @@
-.icon-holder{
-    font-size:48px;
-    width:100px;
-    height:100px;
-    background-color: #e7e7e7;
-    color: #23d789;
-    border-radius: 50%;
-    margin-bottom: 30px;
+.icon-holder {
+  font-size: 48px;
+  width: 100px;
+  height: 100px;
+  background-color: #e7e7e7;
+  color: #3b3486;
+  border-radius: 50%;
+  margin-bottom: 30px;
 }
 
-.power h4{
-    margin-bottom: 24px;
+.power h4 {
+  margin-bottom: 24px;
 }
-

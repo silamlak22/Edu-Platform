@@ -6,36 +6,21 @@ const Header = () => {
   const path = useLocation();
   const url = path.pathname.split("/")[1];
 
-  //  window.addEventListener("scroll", () => {
-  //      const top = window.pageYOffset;
-  //      if (top > 96) {
-  //          document.getElementById("header").style.backgroundColor = "#111";
-  //      } else if( url==="" && top <= 96) {
-  //          document.getElementById("header").style.backgroundColor = "transparent";
-  //      }else {
-  //          document.getElementById("header").style.backgroundColor = "#111";
-  //      }
-  //  });
-
   window.addEventListener("scroll", () => {
     const top = window.pageYOffset;
-    const header = document.getElementById("header");
-
-    if (header) {
-      // Check if header element exists
-      if (top > 96) {
-        header.style.backgroundColor = "#111";
-      } else if (url === "" && top <= 96) {
-        header.style.backgroundColor = "transparent";
-      } else {
-        header.style.backgroundColor = "#111";
-      }
+    if (top > 96) {
+      document.getElementById("header").style.backgroundColor = "#111";
+    } else if (url === "" && top <= 96) {
+      document.getElementById("header").style.backgroundColor = "transparent";
+    } else {
+      document.getElementById("header").style.backgroundColor = "#111";
     }
   });
 
   return (
     <>
       <header
+        id="header"
         style={
           url !== ""
             ? { backgroundColor: "#111" }
@@ -64,9 +49,9 @@ const Header = () => {
             >
               <ul className="navbar-nav ms-auto ">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <Link to="/" className="nav-link active" href="#">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/fields" className="nav-link" href="#">
@@ -75,33 +60,33 @@ const Header = () => {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/fields" className="nav-link" href="#">
                     Course Types
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/fields" className="nav-link" href="#">
                     Facilities
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/fields" className="nav-link" href="#">
                     Wards
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/fields" className="nav-link" href="#">
                     Branches
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/fields" className="nav-link" href="#">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item icons-holder">
